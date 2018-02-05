@@ -30,13 +30,10 @@ class SidebarController extends Controller
             return new Response();
         }
 
-        $event   = $this->getDispatcher()->dispatch(ThemeEvents::THEME_SIDEBAR_SETUP_MENU,new SidebarMenuEvent($request));
+        $event = $this->getDispatcher()->dispatch(ThemeEvents::THEME_SIDEBAR_SETUP_MENU,new SidebarMenuEvent($request));
 
-        return $this->render(
-                    'AvanzuAdminThemeBundle:Sidebar:menu.html.twig',
-                        array(
-                            'menu' => $event->getItems()
-                        )
-        );
+        return $this->render('AvanzuAdminThemeBundle:Sidebar:menu.html.twig', array(
+            'menu' => $event->getItems()
+        ));
     }
 }

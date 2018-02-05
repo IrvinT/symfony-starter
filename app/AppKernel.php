@@ -26,7 +26,8 @@ class AppKernel extends Kernel
             new Avanzu\AdminThemeBundle\AvanzuAdminThemeBundle(),
 
             new AdminBundle\AdminBundle(), //Our main application bundle
-            new UserBundle\UserBundle(), //Salex user management bundle
+            new UserBundle\UserBundle(), //Salex user management bundle,
+            new SiteBundle\SiteBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

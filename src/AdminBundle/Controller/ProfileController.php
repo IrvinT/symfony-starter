@@ -56,7 +56,7 @@ class ProfileController extends Controller
         }
 
         $breadcrumbs = $this->get("white_october_breadcrumbs");
-        $breadcrumbs->addRouteItem("Home", "homepage");
+        $breadcrumbs->addRouteItem("Home", "admin_homepage");
         $breadcrumbs->addRouteItem("Profile", "admin_profile_show");
         $breadcrumbs->addRouteItem("Edit Profile", "admin_profile_edit");
 

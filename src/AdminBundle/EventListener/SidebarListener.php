@@ -27,7 +27,7 @@ class SidebarListener
     protected function getMenu(Request $request)
     {
         $items = array(
-            $dash = new MenuItemModel('dashboard', 'Dashboard', 'admin_dashboard', array(), 'fa fa-dashboard')
+            $dash = new MenuItemModel('dashboard', 'Dashboard', 'admin_homepage', array(), 'fa fa-dashboard')
         );
 
         return $this->activateByRoute($request->get('_route'), $items);

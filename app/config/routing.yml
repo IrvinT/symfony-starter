@@ -1,6 +1,10 @@
-app:
-    resource: "@AdminBundle/Controller/"
-    type:     annotation
+site:
+    resource: "@SiteBundle/Resources/config/routing.yml"
+    prefix:   /
+
+admin:
+    resource: "@AdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
 
 admin_user_security:
     resource: "@AdminBundle/Resources/config/routing/security.yml"

@@ -41,7 +41,7 @@ class ChangePasswordController extends Controller
         }
         
         $breadcrumbs = $this->get("white_october_breadcrumbs");
-        $breadcrumbs->addRouteItem("Home", "homepage");
+        $breadcrumbs->addRouteItem("Home", "admin_homepage");
         $breadcrumbs->addRouteItem("Profile", "admin_profile_show");
         $breadcrumbs->addRouteItem("Change Password", "admin_change_password");
 
