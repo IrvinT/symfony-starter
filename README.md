@@ -3,7 +3,7 @@
 
 A Symfony project created on February 17, 2016, 12:17 pm.
 
-This is a starter Admin template built on latest Symfony3 build (3.0.4 at the time of writing). **This is not a BUNDLE**
+This is a starter Admin template built on latest Symfony3 build (3.4.4 at the time of writing). **This is not a BUNDLE**
 
 This project comes with pre installed Symfony recommended and useful bundles to for rapid web development. This project use [AdminThemeBundle](https://github.com/avanzu/AdminThemeBundle) theme.
 
@@ -14,11 +14,9 @@ Following bundles are included with the template. Not all of them are used in ex
 * [FOSUserBundle](https://github.com/FriendsOfSymfony/FOSUserBundle) - User Management
 * [FOSRestBundle](https://github.com/FriendsOfSymfony/FOSRestBundle) - For bulid meaningful REST API's
 * [DoctrineMigrationsBundle](http://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html) - Doctrine database migrations
-* [LiipImagineBundle](https://github.com/liip/LiipImagineBundle) - Easy image manupilation
 * [JMSSerializerBundle](http://jmsyst.com/bundles/JMSSerializerBundle) - Easily serialize, and deserialize object graphs of any complexity (supports XML, JSON, YAML)
 * [KnpMenuBundle](https://github.com/KnpLabs/KnpMenuBundle) - Build object oriented menus
 * [StofDoctrineExtensionsBundle](https://github.com/stof/StofDoctrineExtensionsBundle) - Integrate doctrine extensions like **Timestampable**, **Slugabble** and **Translatable** etc
-* [VichUploaderBundle](https://github.com/dustin10/VichUploaderBundle) - Handle easy file upload
 * [IvoryCKEditorBundle](https://github.com/egeloen/IvoryCKEditorBundle) - The bundle provides a CKEditor integration for your Symfony Project
 * [WhiteOctoberBreadcrumbsBundle](https://github.com/whiteoctober/BreadcrumbsBundle) - Easy breadcrumbs generation. However admin template use bultin Event Listeners comes with AvanzuAdminBundle and this breadcrumb bundle to handle generate breadcrumbs
 * [AvanzuAdminThemeBundle](https://github.com/avanzu/AdminThemeBundle) - AdminLTE integreation with Symfony
