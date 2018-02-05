@@ -1,0 +1,4 @@
+# This is the admin site specific parameters
+parameters:
+    site_name: 'Admininistration'
+    footer_url: 'Tous droits réservés'

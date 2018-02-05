@@ -1,0 +1,15 @@
+app:
+    resource: "@AdminBundle/Controller/"
+    type:     annotation
+
+admin_user_security:
+    resource: "@AdminBundle/Resources/config/routing/security.yml"
+    prefix: /admin/profile
+
+admin_user_profile:
+    resource: "@AdminBundle/Resources/config/routing/profile.yml"
+    prefix: /admin/profile
+
+admin_user_change_password:
+    resource: "@AdminBundle/Resources/config/routing/change_password.yml"
+    prefix: /admin/profile

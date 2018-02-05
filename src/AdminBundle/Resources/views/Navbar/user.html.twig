@@ -1,0 +1,25 @@
+{% import "AvanzuAdminThemeBundle:layout:macros.html.twig" as macro %}
+
+<li class="dropdown user user-menu">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <span class="hidden-xs">{{ user.getName()|title }}</span>
+    </a>
+    <ul class="dropdown-menu">
+        <!-- User image -->
+        <li class="user-header">
+            <p>
+                {{user.getName()}}
+                <small>{{ 'Last Login %date%'|trans({'%date%': user.lastLogin|date('d.m.Y g:i A') }, 'AvanzuAdminTheme') }}</small>
+            </p>
+        </li>
+
+        <li class="user-footer">
+            <div class="pull-left">
+                <a href="{{ path('admin_profile_show') }}" class="btn btn-default btn-flat">{{'Profile'|trans({}, 'AvanzuAdminTheme')}}</a>
+            </div>
+            <div class="pull-right">
+                <a href="{{ path('admin_security_logout') }}" class="btn btn-default btn-flat">{{ 'Sign out'|trans({}, 'AvanzuAdminTheme') }}</a>
+            </div>
+        </li>
+    </ul>
+</li>

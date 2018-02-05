@@ -1,0 +1,13 @@
+{% extends 'admin-login.html.twig' %}
+
+{% block title %}{{ site_name }}{% endblock %}
+
+{% block page_content %}
+	{% block fos_user_content %}
+		<div class="login-box">
+			<div class="login-box-body">
+				{% block user_auth_contents %} {% endblock %}
+			</div> <!-- End of login-box-body -->
+		</div><!-- End of login-box -->
+	{% endblock %}
+{% endblock %}
